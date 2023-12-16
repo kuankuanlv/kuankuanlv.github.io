@@ -214,10 +214,10 @@
       <div class="post-body">
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              1 tag in total
+              3 tags in total
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/%E6%9E%81%E9%99%90/" style="font-size: 12px; color: #ccc">极限</a>
+              <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 30px; color: #111">数学</a> <a href="/tags/%E6%9E%81%E9%99%90/" style="font-size: 21px; color: #6f6f6f">极限</a>
             </div>
           </div>
         
@@ -235,6 +235,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -294,20 +295,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -397,6 +392,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '845a5fb8fd3c990e284c',
+      clientSecret: '42d803694967d4992564aa28e3a5b528b64f67f4',
+      repo        : 'kuankuanlv.github.io',
+      owner       : 'kuankuanlv',
+      admin       : ['kuankuanlv'],
+      id          : 'f47af1d1eda4d807b02bba32be15120b',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
