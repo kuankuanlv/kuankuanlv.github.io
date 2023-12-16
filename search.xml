@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>day0</title>
+    <url>/2023/12/15/day0/</url>
+    <content><![CDATA[<h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。</p>
+<script type="math/tex; mode=display">
+有数列a_n，一个常数a，\forall\epsilon>0，\exist N>0，当n>N时，|a_n-a|<\epsilon .</script><blockquote>
+<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
+</blockquote>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><script type="math/tex; mode=display">
+证明a_n = \frac{n + (-1)^{n-1}}{n}的极限为1.\\
+证：1，根据函数定义，有|a_n-1|<\epsilon，将a_n化简后得|\frac{1}{n}|<\epsilon，即\frac{1}{n}<\epsilon。即n>\frac{1}{\epsilon}\\
+2，那我们取N=\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N>0，当n>N时。。。)这句话</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
+<blockquote>
+<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)/2，带入到两个极限式子中去</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>函数的极限</title>
+    <url>/2023/12/16/%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="函数的极限"><a href="#函数的极限" class="headerlink" title="函数的极限"></a>函数的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设一函数f(x)在某一去心邻域U(x0)内有定义，对于任意的ε大于0，存在一个δ大于0，当x与x0的距离大于0小于δ 时，有f(x)与一个常数A的距离小于ε 。则称A为函数f(x)在x趋于x0时的极限。记为</p>
+<script type="math/tex; mode=display">
+\lim_{x \to x0}f(x)=A</script><p>用数学语言表示</p>
+<script type="math/tex; mode=display">
+\lim_{x \to x0}f(x)=A \Longrightarrow 对\forall \epsilon>0，\exist \Delta>0，当0<|x-x0|<\Delta时，有|f(x)-A|<\epsilon</script><h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><p>a对于常数函数f(x)=c，证明x趋于x0时的极限为c</p>
+<p>证：</p>
+<p>1，根据函数极限的定义，任取一个ε大于0，存在一个δ大于0，当0&lt;｜x-x0｜&lt;δ时，|fx-c|&lt;ε。</p>
+<p>2，因为 fx-c = 0, 0 &lt; ε，</p>
+<p>3，又因ε是任意的一个大于0的数，与δ没有约束关系，我们可任意取δ都能使得不等式成立</p>
+<p>4，所以极限为c成立</p>
+<p>b证明$\lim_{x\to x0}f(x)=x0$</p>
+<p>1，根据函数极限定义，任取一个大于0的ε，存在一个大于0的δ，当xxx时，|f(x)-x0|&lt;ε成立</p>
+<p>2，化简不等式，得到x0-x0=0 &lt; ε</p>
+<p>3，所以函数本身对于x没有任何约束，所以就对δ没有约束，所以δ可以任意取</p>
+<p>c证明$\lim_{x \to 1}(2x-1)=1$</p>
+<p>1，根据函数极限定义，对任意大于0的ε，都有大于0的δ，当0&lt;|x-1|&lt;δ，|2x-1-1|&lt;ε成立</p>
+<p>2，化简得：｜2x-2｜&lt;ε 、|x-1| &lt; ε /2</p>
+<p>3，第2步的不等式就是函数极限定义对fx的约束，fx又对自变量x的约束，</p>
+<p>4，根据得到的约束看能否找到一个δ，因为δ是要大于|x-1|的，而在函数极限定义对函数的约束中知道|x-1| &lt; ε /2</p>
+<p>5，那让δ等于 ε /2这个数字，即不论给的ε是多少，只要找到 ε /2作为δ，|fx-A|&lt;ε 都能成立</p>
+<h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><p>1，对于函数极限的证明，通常是根据函数极限定义，在已知题目中的极限值情况下，对｜fx-极限值｜&lt; ε，这个不等式进行化简</p>
+<p>2，化简后能够得到一个关于x的不等式，这个不等式是函数满足极限定义情况下，函数本身对于x的约束</p>
+<p>3，根据函数对x的约束，我们要寻找一个δ，让δ满足 0&lt;|x-x0|&lt;δ，同时其中的x也要满足函数对x的约束</p>
+<p>比如$\lim_{n \to 1} f(x)=\frac{n^2-1}{n-1}=2$(不太符合直觉…)</p>
+<script type="math/tex; mode=display">
+1,极限定义对函数的约束：|f(x)- A | < \epsilon，即|x-1-2|<\epsilon\\
+2,根据上面约束得到函数对自变量x的约束为 |x-1| < \epsilon,展开后得到x<1+\epsilon且x>1-\epsilon\\
+(可以理解为x一定要处于数轴上的横坐标(1-\epsilon，1+\epsilon)这个范围之内)\\
+3,极限定义中要求找到一个δ，满足0<|x-x0|<δ，展开后就是x<1+δ且x>1-δ\\
+(可以理解为x要处于(1-δ，1+δ)这个范围内，然后在这个范围内随便找一个数值，就算我们找到一个合理的δ了)\\
+(那如何找到一个合理的δ，并将它表示出来呢？借助ε，因为ε是一个具体的值，在开始就已经给定了的)\\
+4,我们把δ用带ε这个数值的方式表示出来，比如让δ等于ε，或者让δ总是小于ε？</script><p><img src="/.com//image-20231216145608167.png" alt="image-20231216145608167"></p>
+]]></content>
+      <categories>
+        <category>默认</category>
+      </categories>
+      <tags>
+        <tag>极限</tag>
+      </tags>
+  </entry>
+</search>
