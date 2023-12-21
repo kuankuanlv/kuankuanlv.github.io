@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="道阻且长，行则将至多思考一点，多努力一点">
+  <meta name="description" content="无穷小Definition 如果函数f(x)在x-&gt;x0时候的极限为0，则称函数f(x)为x趋于x0时候的无穷小   依赖函数极限的定义  有函数f(x)，对于任意的ε大于0，都存在一个δ大于0，在当0小于|x-x0|小于δ时，《|f(x)-A| &lt; ε》成立   无穷小是一个函数，非常量  0是无穷小(特殊)   Theorem 在自变量的同一变化过程中，函数f(x)存在极限的充分必">
 <meta property="og:type" content="article">
-<meta property="og:title" content="day0">
-<meta property="og:url" content="http://example.com/2023/12/15/day0/index.html">
+<meta property="og:title" content="无穷小与无穷大">
+<meta property="og:url" content="http://example.com/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/index.html">
 <meta property="og:site_name" content="道阻且长，行则将至">
-<meta property="og:description" content="道阻且长，行则将至多思考一点，多努力一点">
+<meta property="og:description" content="无穷小Definition 如果函数f(x)在x-&gt;x0时候的极限为0，则称函数f(x)为x趋于x0时候的无穷小   依赖函数极限的定义  有函数f(x)，对于任意的ε大于0，都存在一个δ大于0，在当0小于|x-x0|小于δ时，《|f(x)-A| &lt; ε》成立   无穷小是一个函数，非常量  0是无穷小(特殊)   Theorem 在自变量的同一变化过程中，函数f(x)存在极限的充分必">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-12-15T13:36:08.000Z">
-<meta property="article:modified_time" content="2023-12-15T14:40:40.900Z">
+<meta property="article:published_time" content="2023-12-18T09:21:36.000Z">
+<meta property="article:modified_time" content="2023-12-19T06:57:42.168Z">
 <meta property="article:author" content="QI">
+<meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2023/12/15/day0/">
+<link rel="canonical" href="http://example.com/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/">
 
 
 <script id="page-configurations">
@@ -45,7 +46,7 @@
   };
 </script>
 
-  <title>day0 | 道阻且长，行则将至</title>
+  <title>无穷小与无穷大 | 道阻且长，行则将至</title>
   
 
 
@@ -76,7 +77,119 @@
   </style>
 </noscript>
 
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -193,7 +306,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh_Hans">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/15/day0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -206,7 +319,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          day0
+          无穷小与无穷大
         </h1>
 
         <div class="post-meta">
@@ -215,10 +328,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-12-15 21:36:08 / Modified: 22:40:40" itemprop="dateCreated datePublished" datetime="2023-12-15T21:36:08+08:00">2023-12-15</time>
+              <time title="Created: 2023-12-18 17:21:36" itemprop="dateCreated datePublished" datetime="2023-12-18T17:21:36+08:00">2023-12-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-12-19 14:57:42" itemprop="dateModified" datetime="2023-12-19T14:57:42+08:00">2023-12-19</time>
+              </span>
 
           
 
@@ -231,7 +350,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
+        <h3 id="无穷小"><a href="#无穷小" class="headerlink" title="无穷小"></a>无穷小</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><blockquote>
+<p>如果函数f(x)在x-&gt;x0时候的极限为0，则称函数f(x)为x趋于x0时候的无穷小</p>
+</blockquote>
+<ol>
+<li><p>依赖函数极限的定义</p>
+<blockquote>
+<p>有函数f(x)，对于任意的ε大于0，都存在一个δ大于0，在当0小于|x-x0|小于δ时，<strong>《|f(x)-A| &lt; ε》成立</strong></p>
+</blockquote>
+</li>
+<li><p>无穷小是一个函数，非常量</p>
+</li>
+<li><p>0是无穷小(特殊)</p>
+</li>
+</ol>
+<h4 id="Theorem"><a href="#Theorem" class="headerlink" title="Theorem"></a>Theorem</h4><blockquote>
+<p>在自变量的同一变化过程中，函数f(x)存在极限的充分必要条件是f(x)=A+å，其中A为函数极限值、å为函数的无穷小</p>
+</blockquote>
+<p>必要性：</p>
+<p>从结论推条件：已知lim f(x)= A，来推f(x)= A + 无穷小</p>
+<p>根据已知：lim f(x)= A，对于任意的ε大于0，当x与x0的关系满足xxx时，则有｜f(x)-A｜&lt;ε 。</p>
+<p>设有一个函数å = f(x) - A，对å求极限，因为已知了f(x)=的极限为A，所以对lim å 就等于对  f(x) -A  求极限，</p>
+<p>根据极限的四则运算法则可将对å的求极限转成对 f(x)  和 A 分别求极限的差，即：</p>
+<p>1：lim f(x) = ？  和 2: lim A =？，由题目中的已知条件知道1的极限为A，2作为一个常数函数极限为该常数即A，</p>
+<p>对 A - A 得 0 ，所以limå 为0 ，所以å 为同一变化过程(还不太理解)的无穷小。</p>
+<p>充分性：</p>
 
     </div>
 
@@ -240,16 +383,22 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/" rel="next" title="数列的极限">
-      数列的极限 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/12/17/%E5%87%BD%E6%95%B0%E6%9C%89%E7%95%8C%E7%9A%84%E8%AF%81%E6%98%8E/" rel="prev" title="函数有界的证明">
+      <i class="fa fa-chevron-left"></i> 函数有界的证明
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/12/20/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/" rel="next" title="函数极限运算法则">
+      函数极限运算法则 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -310,7 +459,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%81%93%E9%98%BB%E4%B8%94%E9%95%BF%EF%BC%8C%E8%A1%8C%E5%88%99%E5%B0%86%E8%87%B3"><span class="nav-number">1.</span> <span class="nav-text">道阻且长，行则将至</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E7%A9%B7%E5%B0%8F"><span class="nav-number">1.</span> <span class="nav-text">无穷小</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-number">1.1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Theorem"><span class="nav-number">1.2.</span> <span class="nav-text">Theorem</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -421,6 +570,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
@@ -435,7 +637,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'kuankuanlv.github.io',
       owner       : 'kuankuanlv',
       admin       : ['kuankuanlv'],
-      id          : 'bf6eb7032de748a9e3d0f6cbf711367c',
+      id          : '7df4ca31825bb80c119487ee9eae5520',
         language: '',
       distractionFreeMode: true
     });
