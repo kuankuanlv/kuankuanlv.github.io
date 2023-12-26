@@ -388,12 +388,12 @@
     <content><![CDATA[<h3 id="平方和差"><a href="#平方和差" class="headerlink" title="平方和差"></a>平方和差</h3><script type="math/tex; mode=display">
 a^2-b^2= (a+b)(a-b)\\
 a^2+b^2= ..\\</script><h3 id="完全平方和差"><a href="#完全平方和差" class="headerlink" title="完全平方和差"></a>完全平方和差</h3><script type="math/tex; mode=display">
-(a+b)^2 = a^2+2ab+b^2\\
-(a-b)^2 = a^2-2ab+b^2\\</script><h3 id="立方和差公式"><a href="#立方和差公式" class="headerlink" title="立方和差公式"></a>立方和差公式</h3><script type="math/tex; mode=display">
-a^3-b^3 = (a-b)(a^2+ab+b^2)\\
-a^3+b^3 = (a+b)(a^2-ab+b^2)\\</script><h3 id="完全立方和差公式"><a href="#完全立方和差公式" class="headerlink" title="完全立方和差公式"></a>完全立方和差公式</h3><script type="math/tex; mode=display">
-(a-b)^3 = a^3-3a^2b+3ab^2-b^3\\
-(a+b)^3 = a^3+3a^2b+3ab^2+b^3\\</script><h3 id="等比数列之和公式"><a href="#等比数列之和公式" class="headerlink" title="等比数列之和公式"></a>等比数列之和公式</h3><script type="math/tex; mode=display">
+(a+b)^2 = a^2+2ab+b^2</script><script type="math/tex; mode=display">
+(a-b)^2 = a^2-2ab+b^2</script><h3 id="立方和差公式"><a href="#立方和差公式" class="headerlink" title="立方和差公式"></a>立方和差公式</h3><script type="math/tex; mode=display">
+a^3-b^3 = (a-b)(a^2+ab+b^2)</script><script type="math/tex; mode=display">
+a^3+b^3 = (a+b)(a^2-ab+b^2)</script><h3 id="完全立方和差公式"><a href="#完全立方和差公式" class="headerlink" title="完全立方和差公式"></a>完全立方和差公式</h3><script type="math/tex; mode=display">
+(a-b)^3 = a^3-3a^2b+3ab^2-b^3</script><script type="math/tex; mode=display">
+(a+b)^3 = a^3+3a^2b+3ab^2+b^3</script><h3 id="等比数列之和公式"><a href="#等比数列之和公式" class="headerlink" title="等比数列之和公式"></a>等比数列之和公式</h3><script type="math/tex; mode=display">
 Sn = \frac{a_0(1-r^n)}{1-r}\\
 Sn表示n项之和，a_0为首项，r为公比，n为数量</script><h3 id="三角函数"><a href="#三角函数" class="headerlink" title="三角函数"></a>三角函数</h3><div class="table-container">
 <table>
