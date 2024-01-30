@@ -85,6 +85,21 @@
       </tags>
   </entry>
   <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/day0/</url>
+    <content><![CDATA[<h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>9-6多元函数几何应用</title>
+    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
+<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
+      <tags>
+        <tag>default</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>typora配合hexo时图片显示问题</title>
     <url>/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<ol>
@@ -110,15 +125,6 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>9-6多元函数几何应用</title>
-    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
-<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
-      <tags>
-        <tag>default</tag>
       </tags>
   </entry>
   <entry>
@@ -357,27 +363,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数列的极限</title>
-    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
-    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。<br>$$<br>有数列a_n，一个常数a，\forall\epsilon&gt;0，\exist N&gt;0，当n&gt;N时，|a_n-a|&lt;\epsilon .<br>$$</p>
-<blockquote>
-<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
-</blockquote>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>$$<br>证明a_n &#x3D; \frac{n + (-1)^{n-1}}{n}的极限为1.\<br>证：1，根据函数定义，有|a_n-1|&lt;\epsilon，将a_n化简后得|\frac{1}{n}|&lt;\epsilon，即\frac{1}{n}&lt;\epsilon。即n&gt;\frac{1}{\epsilon}\<br>2，那我们取N&#x3D;\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N&gt;0，当n&gt;N时。。。)这句话<br>$$</p>
-<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
-<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
-<blockquote>
-<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)&#x2F;2，带入到两个极限式子中去</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无穷小</title>
     <url>/2023/12/16/%E6%97%A0%E7%A9%B7%E5%B0%8F/</url>
     <content><![CDATA[<h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><blockquote>
@@ -409,9 +394,24 @@
   </entry>
   <entry>
     <title>数列的极限</title>
-    <url>/2023/12/15/day0/</url>
-    <content><![CDATA[<h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
+    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。<br>$$<br>有数列a_n，一个常数a，\forall\epsilon&gt;0，\exist N&gt;0，当n&gt;N时，|a_n-a|&lt;\epsilon .<br>$$</p>
+<blockquote>
+<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
+</blockquote>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>$$<br>证明a_n &#x3D; \frac{n + (-1)^{n-1}}{n}的极限为1.\<br>证：1，根据函数定义，有|a_n-1|&lt;\epsilon，将a_n化简后得|\frac{1}{n}|&lt;\epsilon，即\frac{1}{n}&lt;\epsilon。即n&gt;\frac{1}{\epsilon}\<br>2，那我们取N&#x3D;\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N&gt;0，当n&gt;N时。。。)这句话<br>$$</p>
+<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
+<blockquote>
+<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)&#x2F;2，带入到两个极限式子中去</p>
+</blockquote>
+</li>
+</ol>
 ]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>极限</tag>
+      </tags>
   </entry>
   <entry>
     <title>无穷小与无穷大</title>
