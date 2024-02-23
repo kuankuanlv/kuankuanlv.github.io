@@ -414,16 +414,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无穷小的比较</title>
-    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
-    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
-<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无穷小与无穷大</title>
     <url>/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/</url>
     <content><![CDATA[<h3 id="无穷小"><a href="#无穷小" class="headerlink" title="无穷小"></a>无穷小</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><blockquote>
@@ -482,6 +472,45 @@
       </tags>
   </entry>
   <entry>
+    <title>无穷小的比较</title>
+    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
+<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>连续与间断点</title>
+    <url>/2023/12/23/%E8%BF%9E%E7%BB%AD%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9/</url>
+    <content><![CDATA[<p><img src="/2023/12/23/%E8%BF%9E%E7%BB%AD%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9/image-20231223195216129.png" alt="image-20231223195216129"></p>
+<ul>
+<li><p>连续</p>
+<p>三种定义</p>
+</li>
+<li><p>间断点</p>
+<p>两类四种</p>
+<ol>
+<li>第一类间断点<ol>
+<li>可去间断点：x趋于x0时候的极限存在(左极限=右极限)，但是在x0处无定义</li>
+<li>跳跃间断点：x趋于x0时候的极限存在（左极限!=右极限），在x0处肯定无定义</li>
+</ol>
+</li>
+<li>第二类间断点<ol>
+<li>无穷间断点：x趋于x0时候的左极限或者右极限趋于无穷，如tanx在x趋于π/2时候的(函数极限为∞)</li>
+<li>震荡间断点：x趋于x0时候的极限不存在，且无限震荡，如sin1/x</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>default</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>高数概念理解</title>
     <url>/2024/01/20/%E9%AB%98%E6%95%B0%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<h3 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h3><p>定义：</p>
@@ -515,35 +544,6 @@
 <p>等式右边的第一项中的f’(x)为定义中的A；</p>
 <p>定是右边的第二项为∆x的高阶无穷小(x0*O(x0)=O(x2^2)是x^2的高阶无穷小，所以必然为x的高阶无穷小)</p>
 <p>至此说明可导可以推出可微</p>
-]]></content>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>连续与间断点</title>
-    <url>/2023/12/23/%E8%BF%9E%E7%BB%AD%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9/</url>
-    <content><![CDATA[<p><img src="/2023/12/23/%E8%BF%9E%E7%BB%AD%E4%B8%8E%E9%97%B4%E6%96%AD%E7%82%B9/image-20231223195216129.png" alt="image-20231223195216129"></p>
-<ul>
-<li><p>连续</p>
-<p>三种定义</p>
-</li>
-<li><p>间断点</p>
-<p>两类四种</p>
-<ol>
-<li>第一类间断点<ol>
-<li>可去间断点：x趋于x0时候的极限存在(左极限=右极限)，但是在x0处无定义</li>
-<li>跳跃间断点：x趋于x0时候的极限存在（左极限!=右极限），在x0处肯定无定义</li>
-</ol>
-</li>
-<li>第二类间断点<ol>
-<li>无穷间断点：x趋于x0时候的左极限或者右极限趋于无穷，如tanx在x趋于π/2时候的(函数极限为∞)</li>
-<li>震荡间断点：x趋于x0时候的极限不存在，且无限震荡，如sin1/x</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
 ]]></content>
       <tags>
         <tag>default</tag>
