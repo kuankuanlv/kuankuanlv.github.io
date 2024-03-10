@@ -85,21 +85,6 @@
       </tags>
   </entry>
   <entry>
-    <title>9-6多元函数几何应用</title>
-    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
-<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数列的极限</title>
-    <url>/2023/12/15/day0/</url>
-    <content><![CDATA[<h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
-]]></content>
-  </entry>
-  <entry>
     <title>typora配合hexo时图片显示问题</title>
     <url>/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<ol>
@@ -125,6 +110,15 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9-6多元函数几何应用</title>
+    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
+<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
+      <tags>
+        <tag>default</tag>
       </tags>
   </entry>
   <entry>
@@ -216,6 +210,12 @@
       <tags>
         <tag>数学</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/day0/</url>
+    <content><![CDATA[<h1 id="道阻且长，行则将至"><a href="#道阻且长，行则将至" class="headerlink" title="道阻且长，行则将至"></a>道阻且长，行则将至</h1><p>多思考一点，多努力一点</p>
+]]></content>
   </entry>
   <entry>
     <title>函数有界的证明</title>
