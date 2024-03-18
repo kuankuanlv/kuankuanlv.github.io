@@ -148,6 +148,56 @@ y'=\frac{1}{8}e^{2x}+sin(x)+\frac{1}{2} C_1x^2+C_2x+C_3</script></li>
 ]]></content>
   </entry>
   <entry>
+    <title>typora配合hexo时图片显示问题</title>
+    <url>/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<ol>
+<li><p>配置typora</p>
+<p>perference—image—When Insert配置如下</p>
+</li>
+</ol>
+<p><img src="/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20231216201841414.png" alt="image-20231216201841414"></p>
+<ol>
+<li><p>添加hexo插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启用hexo配置</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除并重启</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+<p>生效</p>
+<p><img src="/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20231216202135619.png" alt="image-20231216202135619"></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>充分与必要条件的区别</title>
+    <url>/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+    <content><![CDATA[<h2 id="充分条件"><a href="#充分条件" class="headerlink" title="充分条件"></a>充分条件</h2><p>若A是B的充分条件，则A与其他B的充分条件均可单独推出B，各充分条件之间属于平级并列关系，</p>
+<p>反之B成立无法100%推出它的某一充分条件成立，图示如下：</p>
+<p><img src="/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/v2-8379be8fd826ce54d65e388353b06f67_1440w.webp" alt="img"></p>
+<h2 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h2><p>若A是B的必要条件，则A与B的其他必要条件都成立时才可推出B，A+C+D-&gt;B，</p>
+<p>反之B成立可推出它的任意必要条件成立，图示如下：</p>
+<p><img src="/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/v2-5ee5f4703b228b62f84c6c6c12ecccac_1440w.png" alt="img"></p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>证明A是B的充分必要条件时，通常按照下面两部来进行</p>
+<p>1，先证明充分性，即A能推出B</p>
+<blockquote>
+<p>因为已知A，根据xxx，证得B，所以A是B的充分条件</p>
+</blockquote>
+<p>2，再证明必要性，即B能反推出A</p>
+<blockquote>
+<p>已知B成立，根据xxx，证得A，所以A是B的必要条件</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一阶线性微分方程&amp;伯努利方程</title>
     <url>/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h2><h3 id="定义-形式"><a href="#定义-形式" class="headerlink" title="定义/形式"></a>定义/形式</h3><p>形如以下形式的方程称为一阶线性(<strong>非齐次</strong>)微分方程，其中<strong>一阶</strong>来源dy、<strong>线性</strong>来自其变量的加减运算（??）。</p>
@@ -246,56 +296,6 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
 </blockquote>
 </li>
 </ul>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>typora配合hexo时图片显示问题</title>
-    <url>/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<ol>
-<li><p>配置typora</p>
-<p>perference—image—When Insert配置如下</p>
-</li>
-</ol>
-<p><img src="/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20231216201841414.png" alt="image-20231216201841414"></p>
-<ol>
-<li><p>添加hexo插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启用hexo配置</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>清除并重启</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
-<p>生效</p>
-<p><img src="/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20231216202135619.png" alt="image-20231216202135619"></p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>充分与必要条件的区别</title>
-    <url>/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<h2 id="充分条件"><a href="#充分条件" class="headerlink" title="充分条件"></a>充分条件</h2><p>若A是B的充分条件，则A与其他B的充分条件均可单独推出B，各充分条件之间属于平级并列关系，</p>
-<p>反之B成立无法100%推出它的某一充分条件成立，图示如下：</p>
-<p><img src="/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/v2-8379be8fd826ce54d65e388353b06f67_1440w.webp" alt="img"></p>
-<h2 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h2><p>若A是B的必要条件，则A与B的其他必要条件都成立时才可推出B，A+C+D-&gt;B，</p>
-<p>反之B成立可推出它的任意必要条件成立，图示如下：</p>
-<p><img src="/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/v2-5ee5f4703b228b62f84c6c6c12ecccac_1440w.png" alt="img"></p>
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>证明A是B的充分必要条件时，通常按照下面两部来进行</p>
-<p>1，先证明充分性，即A能推出B</p>
-<blockquote>
-<p>因为已知A，根据xxx，证得B，所以A是B的充分条件</p>
-</blockquote>
-<p>2，再证明必要性，即B能反推出A</p>
-<blockquote>
-<p>已知B成立，根据xxx，证得A，所以A是B的必要条件</p>
-</blockquote>
 ]]></content>
       <tags>
         <tag>数学</tag>
@@ -425,6 +425,30 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
       </tags>
   </entry>
   <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。</p>
+<script type="math/tex; mode=display">
+有数列a_n，一个常数a，\forall\epsilon>0，\exist N>0，当n>N时，|a_n-a|<\epsilon .</script><blockquote>
+<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
+</blockquote>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><script type="math/tex; mode=display">
+证明a_n = \frac{n + (-1)^{n-1}}{n}的极限为1.\\
+证：1，根据函数定义，有|a_n-1|<\epsilon，将a_n化简后得|\frac{1}{n}|<\epsilon，即\frac{1}{n}<\epsilon。即n>\frac{1}{\epsilon}\\
+2，那我们取N=\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N>0，当n>N时。。。)这句话</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
+<blockquote>
+<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)/2，带入到两个极限式子中去</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>极限</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>函数的极限</title>
     <url>/2023/12/16/%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<h2 id="函数的极限"><a href="#函数的极限" class="headerlink" title="函数的极限"></a>函数的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设一函数f(x)在某一去心邻域U(x0)内有定义，对于任意的ε大于0，存在一个δ大于0，当x与x0的距离大于0小于δ 时，有f(x)与一个常数A的距离小于ε 。则称A为函数f(x)在x趋于x0时的极限。记为</p>
@@ -459,30 +483,6 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
 (可以理解为x要处于(1-δ，1+δ)这个范围内，然后在这个范围内随便找一个数值，就算我们找到一个合理的δ了)\\
 (那如何找到一个合理的δ，并将它表示出来呢？借助ε，因为ε是一个具体的值，在开始就已经给定了的)\\
 4,我们把δ用带ε这个数值的方式表示出来，比如让δ等于ε，或者让δ总是小于ε？</script><p><img src="/2023/12/16/%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/image-20231216145608167.png" alt="image-20231216145608167"></p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数列的极限</title>
-    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
-    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。</p>
-<script type="math/tex; mode=display">
-有数列a_n，一个常数a，\forall\epsilon>0，\exist N>0，当n>N时，|a_n-a|<\epsilon .</script><blockquote>
-<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
-</blockquote>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><script type="math/tex; mode=display">
-证明a_n = \frac{n + (-1)^{n-1}}{n}的极限为1.\\
-证：1，根据函数定义，有|a_n-1|<\epsilon，将a_n化简后得|\frac{1}{n}|<\epsilon，即\frac{1}{n}<\epsilon。即n>\frac{1}{\epsilon}\\
-2，那我们取N=\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N>0，当n>N时。。。)这句话</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
-<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
-<blockquote>
-<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)/2，带入到两个极限式子中去</p>
-</blockquote>
-</li>
-</ol>
 ]]></content>
       <tags>
         <tag>数学</tag>
@@ -547,16 +547,6 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
 <p>1：lim f(x) = ？  和 2: lim A =？，由题目中的已知条件知道1的极限为A，2作为一个常数函数极限为该常数即A，</p>
 <p>对 A - A 得 0 ，所以limå 为0 ，所以å 为同一变化过程(还不太理解)的无穷小。</p>
 <p>充分性：</p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无穷小的比较</title>
-    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
-    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
-<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
 ]]></content>
       <tags>
         <tag>数学</tag>
@@ -664,6 +654,16 @@ dy=A*∆x</script></blockquote>
 ]]></content>
       <tags>
         <tag>default</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无穷小的比较</title>
+    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
+<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
       </tags>
   </entry>
 </search>
