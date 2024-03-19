@@ -363,27 +363,6 @@
       </tags>
   </entry>
   <entry>
-    <title>数列的极限</title>
-    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
-    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。<br>$$<br>有数列a_n，一个常数a，\forall\epsilon&gt;0，\exist N&gt;0，当n&gt;N时，|a_n-a|&lt;\epsilon .<br>$$</p>
-<blockquote>
-<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
-</blockquote>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>$$<br>证明a_n &#x3D; \frac{n + (-1)^{n-1}}{n}的极限为1.\<br>证：1，根据函数定义，有|a_n-1|&lt;\epsilon，将a_n化简后得|\frac{1}{n}|&lt;\epsilon，即\frac{1}{n}&lt;\epsilon。即n&gt;\frac{1}{\epsilon}\<br>2，那我们取N&#x3D;\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N&gt;0，当n&gt;N时。。。)这句话<br>$$</p>
-<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
-<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
-<blockquote>
-<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)&#x2F;2，带入到两个极限式子中去</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无穷小</title>
     <url>/2023/12/16/%E6%97%A0%E7%A9%B7%E5%B0%8F/</url>
     <content><![CDATA[<h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><blockquote>
@@ -447,16 +426,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无穷小的比较</title>
-    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
-    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
-<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>极限存在的准则&amp;两个重要极限</title>
     <url>/2023/12/21/%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E7%9A%84%E5%87%86%E5%88%99-%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<h3 id="Squeeze-Theorem"><a href="#Squeeze-Theorem" class="headerlink" title="Squeeze Theorem"></a>Squeeze Theorem</h3><p>Definition:</p>
@@ -479,6 +448,27 @@
 ]]></content>
       <tags>
         <tag>default</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。<br>$$<br>有数列a_n，一个常数a，\forall\epsilon&gt;0，\exist N&gt;0，当n&gt;N时，|a_n-a|&lt;\epsilon .<br>$$</p>
+<blockquote>
+<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
+</blockquote>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>$$<br>证明a_n &#x3D; \frac{n + (-1)^{n-1}}{n}的极限为1.\<br>证：1，根据函数定义，有|a_n-1|&lt;\epsilon，将a_n化简后得|\frac{1}{n}|&lt;\epsilon，即\frac{1}{n}&lt;\epsilon。即n&gt;\frac{1}{\epsilon}\<br>2，那我们取N&#x3D;\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N&gt;0，当n&gt;N时。。。)这句话<br>$$</p>
+<h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
+<blockquote>
+<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)&#x2F;2，带入到两个极限式子中去</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>极限</tag>
       </tags>
   </entry>
   <entry>
@@ -508,6 +498,16 @@
 ]]></content>
       <tags>
         <tag>default</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无穷小的比较</title>
+    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
+<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
       </tags>
   </entry>
   <entry>
