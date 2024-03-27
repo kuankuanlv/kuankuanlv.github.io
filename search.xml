@@ -91,15 +91,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>9-6多元函数几何应用</title>
-    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
-<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>typora配合hexo时图片显示问题</title>
     <url>/2023/12/16/typora%E9%85%8D%E5%90%88hexo%E6%97%B6%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<ol>
@@ -125,6 +116,15 @@
 ]]></content>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>9-6多元函数几何应用</title>
+    <url>/2024/01/24/9-6%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%87%A0%E4%BD%95%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="一元向量函数及其导数"><a href="#一元向量函数及其导数" class="headerlink" title="一元向量函数及其导数"></a>一元向量函数及其导数</h2><p>todo</p>
+<h2 id="空间曲线的切线和法平面"><a href="#空间曲线的切线和法平面" class="headerlink" title="空间曲线的切线和法平面"></a>空间曲线的切线和法平面</h2><h2 id="空间曲面的切平面和法线"><a href="#空间曲面的切平面和法线" class="headerlink" title="空间曲面的切平面和法线"></a>空间曲面的切平面和法线</h2>]]></content>
+      <tags>
+        <tag>default</tag>
       </tags>
   </entry>
   <entry>
@@ -414,6 +414,16 @@
       </tags>
   </entry>
   <entry>
+    <title>无穷小的比较</title>
+    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
+<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>无穷小与无穷大</title>
     <url>/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/</url>
     <content><![CDATA[<h3 id="无穷小"><a href="#无穷小" class="headerlink" title="无穷小"></a>无穷小</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><blockquote>
@@ -441,16 +451,6 @@
 <p>1：lim f(x) = ？  和 2: lim A =？，由题目中的已知条件知道1的极限为A，2作为一个常数函数极限为该常数即A，</p>
 <p>对 A - A 得 0 ，所以limå 为0 ，所以å 为同一变化过程(还不太理解)的无穷小。</p>
 <p>充分性：</p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无穷小的比较</title>
-    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
-    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
-<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
 ]]></content>
       <tags>
         <tag>数学</tag>
