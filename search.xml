@@ -425,30 +425,6 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
       </tags>
   </entry>
   <entry>
-    <title>数列的极限</title>
-    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
-    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。</p>
-<script type="math/tex; mode=display">
-有数列a_n，一个常数a，\forall\epsilon>0，\exist N>0，当n>N时，|a_n-a|<\epsilon .</script><blockquote>
-<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
-</blockquote>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><script type="math/tex; mode=display">
-证明a_n = \frac{n + (-1)^{n-1}}{n}的极限为1.\\
-证：1，根据函数定义，有|a_n-1|<\epsilon，将a_n化简后得|\frac{1}{n}|<\epsilon，即\frac{1}{n}<\epsilon。即n>\frac{1}{\epsilon}\\
-2，那我们取N=\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N>0，当n>N时。。。)这句话</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
-<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
-<blockquote>
-<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)/2，带入到两个极限式子中去</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-        <tag>极限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>函数的极限</title>
     <url>/2023/12/16/%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/</url>
     <content><![CDATA[<h2 id="函数的极限"><a href="#函数的极限" class="headerlink" title="函数的极限"></a>函数的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设一函数f(x)在某一去心邻域U(x0)内有定义，对于任意的ε大于0，存在一个δ大于0，当x与x0的距离大于0小于δ 时，有f(x)与一个常数A的距离小于ε 。则称A为函数f(x)在x趋于x0时的极限。记为</p>
@@ -483,6 +459,30 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
 (可以理解为x要处于(1-δ，1+δ)这个范围内，然后在这个范围内随便找一个数值，就算我们找到一个合理的δ了)\\
 (那如何找到一个合理的δ，并将它表示出来呢？借助ε，因为ε是一个具体的值，在开始就已经给定了的)\\
 4,我们把δ用带ε这个数值的方式表示出来，比如让δ等于ε，或者让δ总是小于ε？</script><p><img src="/2023/12/16/%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/image-20231216145608167.png" alt="image-20231216145608167"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>极限</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数列的极限</title>
+    <url>/2023/12/15/%E6%95%B0%E5%88%97%E7%9A%84%E6%9E%81%E9%99%90/</url>
+    <content><![CDATA[<h2 id="第一章-第二节-数列的极限"><a href="#第一章-第二节-数列的极限" class="headerlink" title="第一章 第二节 数列的极限"></a>第一章 第二节 数列的极限</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设{Xn}为一个数列，如果存在一个常数a，对于任意给定的一个无论多么小的数ε&gt;0，总存在一个正整数N，使得|{Xn}-a|&lt;ε。则称a为数列的极限，或者称数列收敛于a。如果不存在这样的数，则称数列不存在极限。</p>
+<script type="math/tex; mode=display">
+有数列a_n，一个常数a，\forall\epsilon>0，\exist N>0，当n>N时，|a_n-a|<\epsilon .</script><blockquote>
+<p> 注意：在利用数列极限的定义来论证某个数a 是数列的极限时，重要的是对于任意给定的正数ε ，要能够指出定义中所说的这种正整数 N确实存在</p>
+</blockquote>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><script type="math/tex; mode=display">
+证明a_n = \frac{n + (-1)^{n-1}}{n}的极限为1.\\
+证：1，根据函数定义，有|a_n-1|<\epsilon，将a_n化简后得|\frac{1}{n}|<\epsilon，即\frac{1}{n}<\epsilon。即n>\frac{1}{\epsilon}\\
+2，那我们取N=\frac{1}{\epsilon}，就能满足定义中的(总能找到一个N>0，当n>N时。。。)这句话</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ol>
+<li><p>极限的唯一性，如果数列a_n收敛，那么它的极限唯一</p>
+<blockquote>
+<p>用反证法，即数列 an 的极限即等于a又等于b，且a&lt;b，然后取ε为 (b-a)/2，带入到两个极限式子中去</p>
+</blockquote>
+</li>
+</ol>
 ]]></content>
       <tags>
         <tag>数学</tag>
