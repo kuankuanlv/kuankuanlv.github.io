@@ -414,16 +414,6 @@
       </tags>
   </entry>
   <entry>
-    <title>无穷小的比较</title>
-    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
-    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
-<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无穷小与无穷大</title>
     <url>/2023/12/18/%E6%97%A0%E7%A9%B7%E5%B0%8F%E4%B8%8E%E6%97%A0%E7%A9%B7%E5%A4%A7/</url>
     <content><![CDATA[<h3 id="无穷小"><a href="#无穷小" class="headerlink" title="无穷小"></a>无穷小</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><blockquote>
@@ -451,6 +441,16 @@
 <p>1：lim f(x) = ？  和 2: lim A =？，由题目中的已知条件知道1的极限为A，2作为一个常数函数极限为该常数即A，</p>
 <p>对 A - A 得 0 ，所以limå 为0 ，所以å 为同一变化过程(还不太理解)的无穷小。</p>
 <p>充分性：</p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无穷小的比较</title>
+    <url>/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<h4 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h4><p>等价无穷小是用来简化极限计算的</p>
+<h4 id="常见等价无穷小（需记忆）"><a href="#常见等价无穷小（需记忆）" class="headerlink" title="常见等价无穷小（需记忆）"></a>常见等价无穷小（需记忆）</h4><p><img src="/2023/12/22/%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83/v2-209248d85283f644d189f0b11b133b98_1440w.png" alt="img"></p>
 ]]></content>
       <tags>
         <tag>数学</tag>
