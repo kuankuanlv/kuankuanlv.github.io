@@ -175,110 +175,6 @@ y'=\frac{1}{8}e^{2x}+sin(x)+\frac{1}{2} C_1x^2+C_2x+C_3</script></li>
       </tags>
   </entry>
   <entry>
-    <title>一阶线性微分方程&amp;伯努利方程</title>
-    <url>/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h2><h3 id="定义-形式"><a href="#定义-形式" class="headerlink" title="定义/形式"></a>定义/形式</h3><p>形如以下形式的方程称为一阶线性(<strong>非齐次</strong>)微分方程，其中<strong>一阶</strong>来源dy、<strong>线性</strong>来自其变量的加减运算（??）。</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=Q(x)</script><p>如果方程右边关于x的项Q(x)恒等于0，则称其为对应于原一阶线性<strong>非齐次</strong>微分方程的一阶线性<strong>齐次</strong>方程。</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=0</script><h3 id="常数变易法"><a href="#常数变易法" class="headerlink" title="常数变易法"></a>常数变易法</h3><p><em>一种求解一阶线性非齐次微分方程的通解的方法</em></p>
-<h4 id="1一阶线性非齐次方程"><a href="#1一阶线性非齐次方程" class="headerlink" title="1一阶线性非齐次方程"></a>1一阶线性非齐次方程</h4><script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=Q(x)</script><h4 id="2转为一阶线性齐次方程"><a href="#2转为一阶线性齐次方程" class="headerlink" title="2转为一阶线性齐次方程"></a>2转为一阶线性齐次方程</h4><p><em>将方程右边的项看作为0，即将方程当作一阶线性齐次微分方程</em></p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=0</script><h4 id="3求解一阶线性齐次方程"><a href="#3求解一阶线性齐次方程" class="headerlink" title="3求解一阶线性齐次方程"></a>3求解一阶线性齐次方程</h4><p><em>对2中的一阶齐次线性方程转换为可分离变量的形式，并求其解</em></p>
-<p>a.转换成变量可分离的形式</p>
-<script type="math/tex; mode=display">
-\frac{1}{y}dy=-P(x)dx</script><p>b.积分求解结果</p>
-<script type="math/tex; mode=display">
-ln(y)=\int-P(x)dx+C1</script><p>c.使用e将两边抬上去化简（其中的e^c1用C代替）</p>
-<script type="math/tex; mode=display">
-y=e^{\int-P(x)dx+C1}=e^{C1}e^{\int-P(x)dx}=Ce^{\int-P(x)dx}</script><p>d.引入新变量u(x)代替C，即用u(x)带表示常数C</p>
-<p><em>note:将这个一阶线性齐次方程的解式子3.2中的C用一个函数u来代替，并将其看作是原非齐次方程的解，随后在代换过程中将u表示成满足原非齐次方程的解形式，再将u带回本式子就是非齐次线性方程的解？</em></p>
-<script type="math/tex; mode=display">
-y=u(x)*e^{\int-P(x)dx}</script><h4 id="4求导一阶齐次线性方程"><a href="#4求导一阶齐次线性方程" class="headerlink" title="4求导一阶齐次线性方程"></a>4求导一阶齐次线性方程</h4><p>对其求导得到包含u(x)的导数dy/dx，以便将y和dy/dx带回到1中的一阶非齐次线性方程中去，然后观察u(x)如何表示</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}=u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}</script><h4 id="5将齐次方程解和导带回原式子求u"><a href="#5将齐次方程解和导带回原式子求u" class="headerlink" title="5将齐次方程解和导带回原式子求u"></a>5将齐次方程解和导带回原式子求u</h4><p>原式子:</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=Q(x)</script><p>步骤4结果带入左一项:</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}=u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}</script><p>步骤3.d结果带入左边第二项:</p>
-<script type="math/tex; mode=display">
-P(x)*y=P(x)*u(x)*e^{\int-P(x)dx}</script><p>最终有:</p>
-<script type="math/tex; mode=display">
-u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}+P(x)u(x)*e^{\int-P(x)dx}=Q(x)</script><p>最终消项得：</p>
-<script type="math/tex; mode=display">
-u'(x)*e^{\int-P(x)dx}=Q(x),u'(x)=Q(x)*e^{\int P(x)dx}</script><p>已知u’开始求u，通过分离变量法得：</p>
-<script type="math/tex; mode=display">
-u=\int Q(x)*e^{\int P(x)dx}dx+C</script><h4 id="6将u带回齐次方程的解得非齐次方程的解"><a href="#6将u带回齐次方程的解得非齐次方程的解" class="headerlink" title="6将u带回齐次方程的解得非齐次方程的解"></a>6将u带回齐次方程的解得非齐次方程的解</h4><p>步骤3.d结果：</p>
-<script type="math/tex; mode=display">
-y=u(x)e^{\int-P(x)dx}</script><p>步骤5中的计算结果u的表达式:</p>
-<script type="math/tex; mode=display">
-u=\int Q(x)e^{\int P(x)dx}dx+C</script><p>u带入y后最终得一阶线性非齐次方程的通解：</p>
-<script type="math/tex; mode=display">
-y=[\int Q(x)*e^{\int P(x)dx}dx+C]*e^{\int-P(x)dx}</script><h2 id="伯努利方程"><a href="#伯努利方程" class="headerlink" title="伯努利方程"></a>伯努利方程</h2><h3 id="定义-形式-1"><a href="#定义-形式-1" class="headerlink" title="定义/形式"></a>定义/形式</h3><p>形如以下形式的方程</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx}+P(x)y=Q(x)*y^n,(n!=0,1)</script><p>当n=0或者为1时，是线性微分方程。当n不等于0或者1时，这方程不是线性的，但是可以通过变量代换消掉y^n，转成线性的。</p>
-<h3 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h3><ol>
-<li><p>方程两端同时除以y^n得到</p>
-<script type="math/tex; mode=display">
-y^{-n}\frac{dy}{dx}+P(x)y*y^{-n}=Q(x)</script></li>
-<li><p>引入变量z</p>
-<p>观察这个形式，如果左侧第一项添加一个(-n+1)，即</p>
-<script type="math/tex; mode=display">
-(-n+1)y^{-n}\frac{dy}{dx}=\frac{d(y^{1-n})}{dx}</script></li>
-</ol>
-<p>   如果引入新变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="8.37ex" height="2.351ex" role="img" focusable="false" viewbox="0 -833.9 3699.5 1038.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/></g><g data-mml-node="mo" transform="translate(742.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/></g><g data-mml-node="msup" transform="translate(1798.6,0)"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="TeXAtom" transform="translate(523,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/></g><g data-mml-node="mo" transform="translate(500,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mi" transform="translate(1278,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/></g></g></g></g></g></svg></mjx-container>那么左侧第一项有</p>
-<script type="math/tex; mode=display">
-   \frac{d(y^{1-n})}{dx}=\frac{dz}{dy}\frac{dy}{dx}=\frac{dz}{dx}</script><p>   基于以上，方程两边同乘(-n+1)有</p>
-<script type="math/tex; mode=display">
-   (-n+1)y^{-n}\frac{dy}{dx}+P(x) \cdot y \cdot y^{-n}(-n+1)=Q(x)(-n+1)</script><p>   化简得：</p>
-<script type="math/tex; mode=display">
-   \frac{dz}{dx}+P(x)\cdot z \cdot(-n+1)=Q(x)\cdot(-n+1)</script><ol>
-<li><p>求解转换后的一阶线性方程</p>
-<p>求解一阶线性齐次方程，通用公式为</p>
-<script type="math/tex; mode=display">
-e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
-</ol>
-<ol>
-<li>最后替换新变量z</li>
-</ol>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h3><ul>
-<li><p>齐次</p>
-<blockquote>
-<p>“齐次”从词面上解释是“次数相等”的意思。</p>
-<p>微分方程中有两个地方用到“齐次”的叫法：</p>
-<p>1、形如</p>
-<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/e20147f1a3eef408d3de4a7cd8ac956f.svg" alt="img"></p>
-<p> 的方程称为“齐次方程”，这里是指方程中每一项关于x、y的次数都是相等的，例如</p>
-<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/1cfee93f41788e9f2335dc77735d3b29.svg" alt="img"></p>
-<p> 都算是二次项，而</p>
-<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/81156cce131efa267ddb3c7d8f015407.svg" alt="img"></p>
-<p> 算0次项，方程</p>
-<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/3f9a0692b78ce6aa0d18d51188bccac8.svg" alt="img"></p>
-<p> 中每一项都是0次项，所以是“齐次方程”。</p>
-<p>2、形如y’’+py’+qy=0的方程称为“<a href="https://baike.baidu.com/item/齐次线性方程/946587?fromModule=lemma_inlink">齐次线性方程</a>”，这里“齐次”是指方程中每一项关于未知函数y及其导数y’，y’’，……的次数都是相等的（都是一次），方程中没有自由项（不包含y及其导数的项），“线性”则表示导数之间是线性运算（简单地说就是各阶导数之间的只能加减），比如方程y’’+py’+qy=x就不是“齐次”的,因为方程右边的项x不含y及y的导数，是关于y,y’,y’’,……的0次项，因而就要称为“非齐次线性方程”，方程yy’=1也不是，因为它首先不是线性的。</p>
-<p>另外在<a href="https://baike.baidu.com/item/线性代数/800?fromModule=lemma_inlink">线性代数</a>里也有“齐次”的叫法，例如</p>
-<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/41d244eb9c7fce7c5f48a0fc1057052d.svg" alt="img"></p>
-<p> 称为二次齐式，即二次齐次式的意思，因为f中每一项都是关于x、y的二次项。</p>
-</blockquote>
-</li>
-<li><p>线性</p>
-<blockquote>
-<p>网上没有说的清楚的，或许可以简单的用“线性函数”“y=kx+b” 来理解</p>
-</blockquote>
-</li>
-<li><p>阶数</p>
-<blockquote>
-<p>微分方程中所包含的导数的阶</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>充分与必要条件的区别</title>
     <url>/2023/12/16/%E5%85%85%E5%88%86%E4%B8%8E%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<h2 id="充分条件"><a href="#充分条件" class="headerlink" title="充分条件"></a>充分条件</h2><p>若A是B的充分条件，则A与其他B的充分条件均可单独推出B，各充分条件之间属于平级并列关系，</p>
@@ -419,6 +315,110 @@ e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
 <p>记住公式：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.912ex;" xmlns="http://www.w3.org/2000/svg" width="12.498ex" height="3.281ex" role="img" focusable="false" viewbox="0 -1047.1 5524 1450.1"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"/></g><g data-mml-node="mi" transform="translate(645,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(1522.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/></g><g data-mml-node="mfrac" transform="translate(2578.6,0)"><g data-mml-node="mrow" transform="translate(220,516.8) scale(0.707)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"/></g><g data-mml-node="mo" transform="translate(529,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mn" transform="translate(918,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/></g><g data-mml-node="mo" transform="translate(1418,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="msup" transform="translate(2196,0)"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mi" transform="translate(484,363) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/></g></g><g data-mml-node="mo" transform="translate(3154.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g><g data-mml-node="mrow" transform="translate(861.4,-345) scale(0.707)"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/></g><g data-mml-node="mo" transform="translate(500,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mi" transform="translate(1278,0)"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g></g><rect width="2705.5" height="60" x="120" y="220"/></g></g></g></svg></mjx-container>，其中n=数列数量、a为第一项的值、r为公比</p>
 <h4 id="复合函数"><a href="#复合函数" class="headerlink" title="复合函数"></a>复合函数</h4><p>通过对函数进行拆分，将对原本复杂的函数求极限变化成对简单函数求极限</p>
 <p><img src="/2023/12/20/%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/image-20231221220549544.png" alt="image-20231221220549544"></p>
+]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一阶线性微分方程&amp;伯努利方程</title>
+    <url>/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h2><h3 id="定义-形式"><a href="#定义-形式" class="headerlink" title="定义/形式"></a>定义/形式</h3><p>形如以下形式的方程称为一阶线性(<strong>非齐次</strong>)微分方程，其中<strong>一阶</strong>来源dy、<strong>线性</strong>来自其变量的加减运算（??）。</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=Q(x)</script><p>如果方程右边关于x的项Q(x)恒等于0，则称其为对应于原一阶线性<strong>非齐次</strong>微分方程的一阶线性<strong>齐次</strong>方程。</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=0</script><h3 id="常数变易法"><a href="#常数变易法" class="headerlink" title="常数变易法"></a>常数变易法</h3><p><em>一种求解一阶线性非齐次微分方程的通解的方法</em></p>
+<h4 id="1一阶线性非齐次方程"><a href="#1一阶线性非齐次方程" class="headerlink" title="1一阶线性非齐次方程"></a>1一阶线性非齐次方程</h4><script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=Q(x)</script><h4 id="2转为一阶线性齐次方程"><a href="#2转为一阶线性齐次方程" class="headerlink" title="2转为一阶线性齐次方程"></a>2转为一阶线性齐次方程</h4><p><em>将方程右边的项看作为0，即将方程当作一阶线性齐次微分方程</em></p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=0</script><h4 id="3求解一阶线性齐次方程"><a href="#3求解一阶线性齐次方程" class="headerlink" title="3求解一阶线性齐次方程"></a>3求解一阶线性齐次方程</h4><p><em>对2中的一阶齐次线性方程转换为可分离变量的形式，并求其解</em></p>
+<p>a.转换成变量可分离的形式</p>
+<script type="math/tex; mode=display">
+\frac{1}{y}dy=-P(x)dx</script><p>b.积分求解结果</p>
+<script type="math/tex; mode=display">
+ln(y)=\int-P(x)dx+C1</script><p>c.使用e将两边抬上去化简（其中的e^c1用C代替）</p>
+<script type="math/tex; mode=display">
+y=e^{\int-P(x)dx+C1}=e^{C1}e^{\int-P(x)dx}=Ce^{\int-P(x)dx}</script><p>d.引入新变量u(x)代替C，即用u(x)带表示常数C</p>
+<p><em>note:将这个一阶线性齐次方程的解式子3.2中的C用一个函数u来代替，并将其看作是原非齐次方程的解，随后在代换过程中将u表示成满足原非齐次方程的解形式，再将u带回本式子就是非齐次线性方程的解？</em></p>
+<script type="math/tex; mode=display">
+y=u(x)*e^{\int-P(x)dx}</script><h4 id="4求导一阶齐次线性方程"><a href="#4求导一阶齐次线性方程" class="headerlink" title="4求导一阶齐次线性方程"></a>4求导一阶齐次线性方程</h4><p>对其求导得到包含u(x)的导数dy/dx，以便将y和dy/dx带回到1中的一阶非齐次线性方程中去，然后观察u(x)如何表示</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}=u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}</script><h4 id="5将齐次方程解和导带回原式子求u"><a href="#5将齐次方程解和导带回原式子求u" class="headerlink" title="5将齐次方程解和导带回原式子求u"></a>5将齐次方程解和导带回原式子求u</h4><p>原式子:</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=Q(x)</script><p>步骤4结果带入左一项:</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}=u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}</script><p>步骤3.d结果带入左边第二项:</p>
+<script type="math/tex; mode=display">
+P(x)*y=P(x)*u(x)*e^{\int-P(x)dx}</script><p>最终有:</p>
+<script type="math/tex; mode=display">
+u'(x)e^{\int-P(x)dx}+u(x)(-P(x))e^{\int-P(x)dx}+P(x)u(x)*e^{\int-P(x)dx}=Q(x)</script><p>最终消项得：</p>
+<script type="math/tex; mode=display">
+u'(x)*e^{\int-P(x)dx}=Q(x),u'(x)=Q(x)*e^{\int P(x)dx}</script><p>已知u’开始求u，通过分离变量法得：</p>
+<script type="math/tex; mode=display">
+u=\int Q(x)*e^{\int P(x)dx}dx+C</script><h4 id="6将u带回齐次方程的解得非齐次方程的解"><a href="#6将u带回齐次方程的解得非齐次方程的解" class="headerlink" title="6将u带回齐次方程的解得非齐次方程的解"></a>6将u带回齐次方程的解得非齐次方程的解</h4><p>步骤3.d结果：</p>
+<script type="math/tex; mode=display">
+y=u(x)e^{\int-P(x)dx}</script><p>步骤5中的计算结果u的表达式:</p>
+<script type="math/tex; mode=display">
+u=\int Q(x)e^{\int P(x)dx}dx+C</script><p>u带入y后最终得一阶线性非齐次方程的通解：</p>
+<script type="math/tex; mode=display">
+y=[\int Q(x)*e^{\int P(x)dx}dx+C]*e^{\int-P(x)dx}</script><h2 id="伯努利方程"><a href="#伯努利方程" class="headerlink" title="伯努利方程"></a>伯努利方程</h2><h3 id="定义-形式-1"><a href="#定义-形式-1" class="headerlink" title="定义/形式"></a>定义/形式</h3><p>形如以下形式的方程</p>
+<script type="math/tex; mode=display">
+\frac{dy}{dx}+P(x)y=Q(x)*y^n,(n!=0,1)</script><p>当n=0或者为1时，是线性微分方程。当n不等于0或者1时，这方程不是线性的，但是可以通过变量代换消掉y^n，转成线性的。</p>
+<h3 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h3><ol>
+<li><p>方程两端同时除以y^n得到</p>
+<script type="math/tex; mode=display">
+y^{-n}\frac{dy}{dx}+P(x)y*y^{-n}=Q(x)</script></li>
+<li><p>引入变量z</p>
+<p>观察这个形式，如果左侧第一项添加一个(-n+1)，即</p>
+<script type="math/tex; mode=display">
+(-n+1)y^{-n}\frac{dy}{dx}=\frac{d(y^{1-n})}{dx}</script></li>
+</ol>
+<p>   如果引入新变量<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="8.37ex" height="2.351ex" role="img" focusable="false" viewbox="0 -833.9 3699.5 1038.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"/></g><g data-mml-node="mo" transform="translate(742.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"/></g><g data-mml-node="msup" transform="translate(1798.6,0)"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="TeXAtom" transform="translate(523,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/></g><g data-mml-node="mo" transform="translate(500,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mi" transform="translate(1278,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/></g></g></g></g></g></svg></mjx-container>那么左侧第一项有</p>
+<script type="math/tex; mode=display">
+   \frac{d(y^{1-n})}{dx}=\frac{dz}{dy}\frac{dy}{dx}=\frac{dz}{dx}</script><p>   基于以上，方程两边同乘(-n+1)有</p>
+<script type="math/tex; mode=display">
+   (-n+1)y^{-n}\frac{dy}{dx}+P(x) \cdot y \cdot y^{-n}(-n+1)=Q(x)(-n+1)</script><p>   化简得：</p>
+<script type="math/tex; mode=display">
+   \frac{dz}{dx}+P(x)\cdot z \cdot(-n+1)=Q(x)\cdot(-n+1)</script><ol>
+<li><p>求解转换后的一阶线性方程</p>
+<p>求解一阶线性齐次方程，通用公式为</p>
+<script type="math/tex; mode=display">
+e^{\int - P(x)dx} \cdot [C+\int (Q(x) \cdot e^{\int P(x)dx})dx]</script></li>
+</ol>
+<ol>
+<li>最后替换新变量z</li>
+</ol>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h3><ul>
+<li><p>齐次</p>
+<blockquote>
+<p>“齐次”从词面上解释是“次数相等”的意思。</p>
+<p>微分方程中有两个地方用到“齐次”的叫法：</p>
+<p>1、形如</p>
+<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/e20147f1a3eef408d3de4a7cd8ac956f.svg" alt="img"></p>
+<p> 的方程称为“齐次方程”，这里是指方程中每一项关于x、y的次数都是相等的，例如</p>
+<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/1cfee93f41788e9f2335dc77735d3b29.svg" alt="img"></p>
+<p> 都算是二次项，而</p>
+<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/81156cce131efa267ddb3c7d8f015407.svg" alt="img"></p>
+<p> 算0次项，方程</p>
+<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/3f9a0692b78ce6aa0d18d51188bccac8.svg" alt="img"></p>
+<p> 中每一项都是0次项，所以是“齐次方程”。</p>
+<p>2、形如y’’+py’+qy=0的方程称为“<a href="https://baike.baidu.com/item/齐次线性方程/946587?fromModule=lemma_inlink">齐次线性方程</a>”，这里“齐次”是指方程中每一项关于未知函数y及其导数y’，y’’，……的次数都是相等的（都是一次），方程中没有自由项（不包含y及其导数的项），“线性”则表示导数之间是线性运算（简单地说就是各阶导数之间的只能加减），比如方程y’’+py’+qy=x就不是“齐次”的,因为方程右边的项x不含y及y的导数，是关于y,y’,y’’,……的0次项，因而就要称为“非齐次线性方程”，方程yy’=1也不是，因为它首先不是线性的。</p>
+<p>另外在<a href="https://baike.baidu.com/item/线性代数/800?fromModule=lemma_inlink">线性代数</a>里也有“齐次”的叫法，例如</p>
+<p><img src="/2024/01/11/%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/41d244eb9c7fce7c5f48a0fc1057052d.svg" alt="img"></p>
+<p> 称为二次齐式，即二次齐次式的意思，因为f中每一项都是关于x、y的二次项。</p>
+</blockquote>
+</li>
+<li><p>线性</p>
+<blockquote>
+<p>网上没有说的清楚的，或许可以简单的用“线性函数”“y=kx+b” 来理解</p>
+</blockquote>
+</li>
+<li><p>阶数</p>
+<blockquote>
+<p>微分方程中所包含的导数的阶</p>
+</blockquote>
+</li>
+</ul>
 ]]></content>
       <tags>
         <tag>数学</tag>
